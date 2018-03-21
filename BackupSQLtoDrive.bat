@@ -1,8 +1,8 @@
 @echo off
  
 REM Nahuel Krowicki
-REM Mail: nahuelkrowicki@gmail.com
-REM Tel: (011) 1565599196
+REM nahuelkrowicki@gmail.com
+REM github.com/nkrowicki
  
  
  
