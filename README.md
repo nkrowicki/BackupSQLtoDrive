@@ -46,11 +46,25 @@ En este paso se nos abrirá una ventana en el navegador para iniciar sesión en 
 ---------------------------
 
 ## Setup
-* **tarea_programada.bat** (Archivo que crea las tareas programadas utilizando taskschd)
+
+Correr **tarea_programada.bat** > Script que utiliza *ẗaskschd* para crear las tareas programadas las cuales corren el script del backup (**BackupSQLtoDrive.bat**).
 
 ## Test
-* **test_upload_file.bat** (Archivo que crea un archivo de texto, intenta subirlo y luego lo borra) > Testea sí suben los archivos
-* **BackupSQLtoDrive.bat** (Al correr este archivo estaríamos corroborando que todo ande)
+
+Para testear que todo funcione y se suban los archivos vamos a ejecutar lo siguiente:
+
+1. **test_upload_file.bat** > Script que crea un archivo de texto, intenta subirlo al GDrive que configuramos y luego lo borra localmente.
+2.  **BackupSQLtoDrive.bat** > Script principal
+
+## Notas
+
+**.gitignore** > Archivo para ignorar determinados archivos y/o extensiones.
+**BackupSQLtoDrive.bat** > Script principal.
+**README.md** > Readme del repo.
+**correr_invisible.bat** > Script que ejecuta *invisible.vbs* y le pasa por parametro *BackupSQLtoDrive.bat*.
+**invisible.vbs** > Se encarga de ocultar (hacer invisible / correr en background) la ejecución del script pasado por parámetro.
+**tarea_programada.bat** > Script que agrega las tareas programadas al programador de tareas.
+**test_upload_file.bat** > Script que crea un archivo de texto, intenta subirlo al GDrive que configuramos y luego lo borra localmente.
 
 ## Author
 
