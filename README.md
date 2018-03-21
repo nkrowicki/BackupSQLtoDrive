@@ -1,8 +1,8 @@
 ## Instalacion
 
 1. Descargar:
-* [rclone] (https://rclone.org/downloads/)
-* [7-zip] (https://www.7-zip.org/download.html)
+* [rclone](https://rclone.org/downloads/)
+* [7-zip](https://www.7-zip.org/download.html)
 
 2. Instalar rclone en C:/rclone/ y dentro de esta carpeta crear una llamada "BackupSQLtoDrive" quedando la ruta completa: C:/rclone/BackupSQLtoDrive/
 
@@ -12,20 +12,20 @@
 
 (Doc: https://rclone.org/drive/)
 
-* Abrir cmd
-* cd C:/rclone/
-* rclone config
-* name>BackupSQL
+	* Abrir cmd
+	* cd C:/rclone/
+	* rclone config
+	* name>BackupSQL
 
-* new remote
-* 10 (Google Drive)
-* client_id> (Enter, VACIO)
-* client_secret> (Enter, VACIO)
->* root_folder> (Enter, VACIO)
+	* new remote
+	* 10 (Google Drive)
+	* client_id> (Enter, VACIO)
+	* client_secret> (Enter, VACIO)
+	>* root_folder> (Enter, VACIO)
 
-* Se nos abrirá una ventana en el navegador para iniciar sesión en GDrive.
-* Configure this as a team drive?> NO
-* y (This is OK)
+En este paso se nos abrirá una ventana en el navegador para iniciar sesión en GDrive.
+	* Configure this as a team drive?> NO
+	* y (This is OK)
 
 5. Descomprimir todos los archivos de "BackupSQLtoDrive.7z" adentro de C:/rclone/BackupSQLtoDrive/
 
