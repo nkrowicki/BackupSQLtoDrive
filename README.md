@@ -47,14 +47,14 @@ En este paso se nos abrirá una ventana en el navegador para iniciar sesión en 
 
 ## Setup
 
-Correr **tarea_programada.bat** > Script que utiliza *ẗaskschd* para crear las tareas programadas las cuales corren el script del backup (**BackupSQLtoDrive.bat**).
+Correr **tarea_programada.bat** > Script que crea  las tareas programadas para realizar los backups.
 
 ## Test
 
 Para testear que todo funcione y se suban los archivos vamos a ejecutar lo siguiente:
 
 1. **test_upload_file.bat** > Script que crea un archivo de texto, intenta subirlo al GDrive que configuramos y luego lo borra localmente.
-2.  **BackupSQLtoDrive.bat** > Script principal
+2.  **BackupSQLtoDrive.bat** > Script principal, una vez termine la ejecución de este el backup debería ser realizado de la forma correcta.
 
 ## Notas
 
