@@ -76,6 +76,6 @@ Para testear que todo funcione y se suban los archivos vamos a ejecutar lo sigui
 
 **Nahuel Krowicki**
 
-* **nahuelkrowicki@gmail.com**
+* nahuelkrowicki@gmail.com
 
 * [github/nkrowicki](https://github.com/nkrowicki)
