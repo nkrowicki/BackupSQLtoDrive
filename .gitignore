@@ -1,0 +1,5 @@
+#Exe files
+*.exe
+
+#Compressed Files
+*.7z
