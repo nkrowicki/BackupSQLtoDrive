@@ -1,3 +1,11 @@
+## Resumen
+
+Solución para realizar backups en la nube de google de manera automática.
+
+En este caso realizamos backups 2 veces por día (Ejecutadas por tareas programadas, ver tarea_programada.bat) comprimimos ese/esos archivo/s utilizando 7z y luego con rclone los subimos a GDrive.
+
+NOTA: En este caso se busca en determinada carpeta el archivo con fecha de modificación más reciente y ese es el que se utiliza para realizar el backup.
+
 ## Instalacion
 
 1. Descargar:
@@ -13,13 +21,13 @@
 (Doc: https://rclone.org/drive/)
 
 Abrir cmd
-	* cd C:/rclone/
-	* rclone config
-	* name>BackupSQL
+	> cd C:/rclone/
+	> rclone config
+	> name>BackupSQL
 
-	* new remote
-	* 10 (Google Drive)
-	* client_id> (Enter, VACIO)
+	> >n (New remote)
+	> >10 (Google Drive)
+	> client_id> (Enter, VACIO)
 	> client_secret> (Enter, VACIO)
 	> root_folder> (Enter, VACIO)
 
@@ -29,31 +37,18 @@ En este paso se nos abrirá una ventana en el navegador para iniciar sesión en 
 
 5. Descomprimir todos los archivos de "BackupSQLtoDrive.7z" adentro de C:/rclone/BackupSQLtoDrive/
 
+6. Editar "BackupSQLtoDrive.bat" y definir en la variable "sucursal" el nombre/nro de la sucursal en cuestion
+
+7. Crear el directorio de la sucursal en el drive (Ej: para la  sucursal "9012".. crear carpeta cuyo nombre es "9012") en el cual van a ir a parar los archivos subidos
+
 ---------------------------
 
 ## Setup
+* tarea_programada.bat (Archivo que crea las tareas programadas utilizando taskschd)
 
-Correr:
-- 1. test_upload_file.bat (Testear si suben los archivos)
-- 2. tarea_programada.bat (Para crear las 2 tareas programadas)
-- 3. BackupSQLtoDrive.bat
-
-5- Editar "BackupSQLtoDrive.bat" y definir en la variable sucursal el nombre de la sucursal en cuestion
-
-6- Crear el directorio de la sucursal en el drive (Ej: para la  sucursal "9012".. crear carpeta cuyo nombre es "9012")
-
-
-## Synopsis
-
-At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
-
-## Code Example
-
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
-
-## Tests
-
-Describe and show how to run the tests with code examples.
+## Test
+* test_upload_file.bat (Archivo que crea un archivo de texto, intenta subirlo y luego lo borra) > Testea sí suben los archivos
+* BackupSQLtoDrive.bat (Al correr este archivo estaríamos corroborando que todo ande)
 
 ## Author
 Nahuel Krowicki
