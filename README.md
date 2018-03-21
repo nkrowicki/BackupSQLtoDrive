@@ -12,7 +12,7 @@
 
 (Doc: https://rclone.org/drive/)
 
-	* Abrir cmd
+Abrir cmd
 	* cd C:/rclone/
 	* rclone config
 	* name>BackupSQL
@@ -20,8 +20,8 @@
 	* new remote
 	* 10 (Google Drive)
 	* client_id> (Enter, VACIO)
-	* client_secret> (Enter, VACIO)
-	>* root_folder> (Enter, VACIO)
+	> client_secret> (Enter, VACIO)
+	> root_folder> (Enter, VACIO)
 
 En este paso se nos abrirá una ventana en el navegador para iniciar sesión en GDrive.
 	* Configure this as a team drive?> NO
