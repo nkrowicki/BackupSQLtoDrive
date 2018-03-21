@@ -59,17 +59,23 @@ Para testear que todo funcione y se suban los archivos vamos a ejecutar lo sigui
 ## Notas
 
 **.gitignore** > Archivo para ignorar determinados archivos y/o extensiones.
+
 **BackupSQLtoDrive.bat** > Script principal.
+
 **README.md** > Readme del repo.
+
 **correr_invisible.bat** > Script que ejecuta *invisible.vbs* y le pasa por parametro *BackupSQLtoDrive.bat*.
+
 **invisible.vbs** > Se encarga de ocultar (hacer invisible / correr en background) la ejecución del script pasado por parámetro.
+
 **tarea_programada.bat** > Script que agrega las tareas programadas al programador de tareas.
+
 **test_upload_file.bat** > Script que crea un archivo de texto, intenta subirlo al GDrive que configuramos y luego lo borra localmente.
 
 ## Author
 
 **Nahuel Krowicki**
 
-**Mail: nahuelkrowicki@gmail.com**
+* **nahuelkrowicki@gmail.com**
 
 * [github/nkrowicki](https://github.com/nkrowicki)
