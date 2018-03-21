@@ -20,26 +20,27 @@ NOTA: En este caso se busca en determinada carpeta el archivo con fecha de modif
 
 (Doc: https://rclone.org/drive/)
 
-Abrir cmd
+	> Open cmd
 	> cd C:/rclone/
 	> rclone config
 	> name>BackupSQL
 
-	> >n (New remote)
-	> >10 (Google Drive)
+	> n (New remote)
+	> 10 (Google Drive)
 	> client_id> (Enter, VACIO)
 	> client_secret> (Enter, VACIO)
 	> root_folder> (Enter, VACIO)
 
 En este paso se nos abrirá una ventana en el navegador para iniciar sesión en GDrive.
-	* Configure this as a team drive?> NO
-	* y (This is OK)
 
-5. Descomprimir todos los archivos de "BackupSQLtoDrive.7z" adentro de C:/rclone/BackupSQLtoDrive/
+	> Configure this as a team drive?> NO
+	> y (This is OK)
 
-6. Editar "BackupSQLtoDrive.bat" y definir en la variable "sucursal" el nombre/nro de la sucursal en cuestion
+5. Descomprimir todos los archivos de **"BackupSQLtoDrive.7z"** adentro de **C:/rclone/BackupSQLtoDrive/**
 
-7. Crear el directorio de la sucursal en el drive (Ej: para la  sucursal "9012".. crear carpeta cuyo nombre es "9012") en el cual van a ir a parar los archivos subidos
+6. Editar **"BackupSQLtoDrive.bat"** y definir en la variable *"sucursal"* el nombre/nro de la sucursal en cuestion. (Ej: "sucursal=9012")
+
+7. Crear el directorio de la sucursal en **GDrive** (Ej: para la  sucursal "9012".. crear carpeta cuyo nombre es "9012") en el cual van a ir a parar los archivos subidos
 
 ---------------------------
 
@@ -51,5 +52,7 @@ En este paso se nos abrirá una ventana en el navegador para iniciar sesión en 
 * BackupSQLtoDrive.bat (Al correr este archivo estaríamos corroborando que todo ande)
 
 ## Author
+
 Nahuel Krowicki
+
 mail: nahuelkrowicki@gmail.com
