@@ -10,17 +10,18 @@ NOTA: En este caso se busca en determinada carpeta el archivo con fecha de modif
 
 1. Descargar:
 * [rclone](https://rclone.org/downloads/)
-* [7-zip](https://www.7-zip.org/download.html)
+* [7-Zip](https://www.7-zip.org/download.html)
 
-2. Instalar rclone en C:/rclone/ y dentro de esta carpeta crear una llamada "BackupSQLtoDrive" quedando la ruta completa: C:/rclone/BackupSQLtoDrive/
+2. Instalar **rclone** en *C:/rclone/* y dentro de esta carpeta crear una llamada *"BackupSQLtoDrive"* quedando la ruta completa: *C:/rclone/BackupSQLtoDrive/*
 
-3. Instalar 7z en C:/%programfiles%/7-Zip/
+3. Instalar **7-Zip** en *C:/%programfiles%/7-Zip/*
 
-4. Configurar rclone:
+4. **Configurar rclone**:
 
 (Doc: https://rclone.org/drive/)
 
-	> Open cmd
+Open cmd
+
 	> cd C:/rclone/
 	> rclone config
 	> name>BackupSQL
@@ -31,7 +32,7 @@ NOTA: En este caso se busca en determinada carpeta el archivo con fecha de modif
 	> client_secret> (Enter, VACIO)
 	> root_folder> (Enter, VACIO)
 
-En este paso se nos abrirá una ventana en el navegador para iniciar sesión en GDrive.
+En este paso se nos abrirá una ventana en el navegador para iniciar sesión en GDrive y autorizar a rclone.
 
 	> Configure this as a team drive?> NO
 	> y (This is OK)
@@ -45,14 +46,16 @@ En este paso se nos abrirá una ventana en el navegador para iniciar sesión en 
 ---------------------------
 
 ## Setup
-* tarea_programada.bat (Archivo que crea las tareas programadas utilizando taskschd)
+* **tarea_programada.bat** (Archivo que crea las tareas programadas utilizando taskschd)
 
 ## Test
-* test_upload_file.bat (Archivo que crea un archivo de texto, intenta subirlo y luego lo borra) > Testea sí suben los archivos
-* BackupSQLtoDrive.bat (Al correr este archivo estaríamos corroborando que todo ande)
+* **test_upload_file.bat** (Archivo que crea un archivo de texto, intenta subirlo y luego lo borra) > Testea sí suben los archivos
+* **BackupSQLtoDrive.bat** (Al correr este archivo estaríamos corroborando que todo ande)
 
 ## Author
 
-Nahuel Krowicki
+**Nahuel Krowicki**
 
-mail: nahuelkrowicki@gmail.com
+**Mail: nahuelkrowicki@gmail.com**
+
+* [github/nkrowicki](https://github.com/nkrowicki)
